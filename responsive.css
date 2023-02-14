@@ -1,0 +1,51 @@
+@media only screen and (max-width: 1200px) {
+    .logo {
+            padding: 5px;
+        }
+}
+@media only screen and (max-width: 998px) {
+    .navbar-m {
+            display: flex;
+        }
+
+    .logo{
+        padding: 15px;
+        background: #123a7a;
+    }
+.navbar{
+    position: fixed;
+    top: 0;
+    left: -500px;
+    width: 350px;
+    height: 100vh;
+    background: #092859;
+}
+.navbar-co{
+    display: block;
+    flex-direction: column;
+}
+.navbar-co a{
+    display: block;
+    z-index: 0;
+    padding: 20px;
+}
+.navbar-co a::before{
+    z-index: -1;
+    background: #00000080;
+    border-radius: 0;
+}
+.navbar-co a:hover::before {
+    background: #00000080;
+    height: 100%;
+}
+
+.video {
+    padding: 0px;
+}
+  .swiper {
+
+      border-radius: 0px;
+
+  }
+}
+
