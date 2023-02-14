@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -13,8 +17,9 @@ body{
 }
 
 .head-navbar{
-    background: #0a377e;
+    background: #2b3441;
     padding: 10px;
+    text-align: center;
 }
 .phone-sc i{
     margin-right: 10px;
@@ -28,7 +33,7 @@ body{
 .swiper{
     position: relative;
     background: #fff;
-    border-radius:20px;
+    border-radius:10px;
     box-shadow: 0 0 15px #00000020;
 }
 .swiper-slide img{
@@ -40,6 +45,16 @@ body{
     color: #fff;
     margin: 10px;
     text-decoration: none;
+}
+.overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.427);
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
 }
 
 .swiper-button-next,.swiper-button-prev{
@@ -66,13 +81,21 @@ body{
 .phone-sc a:hover{
     text-decoration: underline;
 }
+.logos a{
+    color: #fff;
+    text-decoration: none;
+}
 .navbar-m{
+    position: sticky;
+    top: 0;
+    z-index: 88;
     display: none;
     align-items: center;
     justify-content: space-between;
-    padding: 15px;
+    padding: 5px;
     color: #fff;
-    background: #0A49B0;
+    background: #364050;
+    box-shadow: 0 0 15px #00000050;
 }
 .menubtn i{
     display: flex;
@@ -83,13 +106,14 @@ body{
     cursor: pointer;
     width: 50px;
     height: 50px;
-    background: #0a377e;
+    background: #262d39;
 }
 .navbar{
     position: sticky;
     top: 0;
-    background: #0A49B0;
-    z-index: 999;
+    background: #364050;
+    z-index: 1000;
+    transition: .3s ease-in-out;
 }
 .navbar-co{
     display: flex;
@@ -129,7 +153,10 @@ body{
 }
 
 .video-container{
-    background: #d9e0e9;
+    background-color: #ffffff;
+    opacity: 1;
+    background-image: radial-gradient(circle at center center, #eef2f9, #ffffff), repeating-radial-gradient(circle at center center, #eef2f9, #eef2f9, 31px, transparent 62px, transparent 31px);
+    background-blend-mode: multiply;
 }
 
 
@@ -143,10 +170,57 @@ body{
 .header{
     padding:10px 15px;
     margin: 30px 0;
-    font-size: 22px;
+    font-size: 18px;
     border-radius: 5px;
     color: #2b2b2b;
 }
 .header i{
-    margin-right:20px;
+    margin-left:20px;
+}
+.product-content{
+    display: flex;  
+    height: auto;  
+}
+.box{
+    position: relative;
+    border: 1px solid #ccc;
+    margin: 15px;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.box:hover .show{
+    opacity: 1;
+}
+.show{
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000050;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.btn{
+    padding: 10px 25px;
+    background: #168a04;
+    color: #fff;
+    border-radius: 50px;
+}
+.box img{
+    width: 100%;
+}
+
+.product img{
+    width: 100%;
+}
+
+.contact-container{
+    height: 700px;
+    background: #ccc;
 }
