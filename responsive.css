@@ -1,7 +1,10 @@
 @media only screen and (max-width: 1200px) {
-    .logo {
-            padding: 5px;
-        }
+    .logo,.section-nav {
+            padding: 10px;
+        }    
+    iframe{
+        border-radius: 0;
+    }    
 }
 @media only screen and (max-width: 998px) {
     .navbar-m {
@@ -49,9 +52,7 @@
     margin: 0;
 }
 
-.video {
-    padding: 0px;
-}
+
   .swiper {
       border-radius: 0px;
 
@@ -66,7 +67,23 @@
     width: 35%;
 
 }
-
+.section-nav{
+    flex-direction: column;
+}
+.product-content{
+    width: 100%;
+}
+.header-p{
+    border-radius: 5px;
+    background: #3a4250;
+}
+.header-p,.header-p-alt,.p{
+    text-align: center;
+}
+.product-flex{
+    margin: auto;
+    width: 300px;
+}
 }
 
 @media only screen and (max-width: 768px) {
