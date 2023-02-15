@@ -1,3 +1,5 @@
+
+
 @media only screen and (max-width: 1200px) {
     .logo,.section-nav {
             padding: 10px;
@@ -6,6 +8,7 @@
         border-radius: 0;
     }    
 }
+
 @media only screen and (max-width: 998px) {
     .navbar-m {
             display: flex;
@@ -19,7 +22,7 @@
     position: fixed;
     top: 0;
     left: -500px;
-    width: 350px;
+    width: 300px;
     height: 100vh;
     background: #364050;
 }
@@ -51,7 +54,13 @@
     padding: 0;
     margin: 0;
 }
-
+.header-p{
+    font-size:18px ;
+}
+.header-p-alt {
+    font-size: 16px;
+}
+.p{font-size: 16px;}
 
   .swiper {
       border-radius: 0px;
@@ -121,4 +130,33 @@
         width: 100%;
         border-radius: 0;
     }
+}
+
+
+@media only screen and (max-width: 308px) {
+    .navbar{
+        width: 250px;
+    }
+}
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1200px) {
+
+    .footer-distributed {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+
 }

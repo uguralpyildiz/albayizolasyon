@@ -1,3 +1,11 @@
+:root {    
+  --swiper-pagination-color:#2e9918;
+  --swiper-pagination-bullet-size: 10px;
+  --swiper-pagination-bullet-width: 10px;
+  --swiper-pagination-bullet-height: 10px;
+}
+
+
 *{
     padding: 0;
     margin: 0;
@@ -32,10 +40,9 @@ body{
 }
 .swiper{
     position: relative;
-    border-radius:10px;
 }
 .swiper-slide{
-    border-radius: 11px;
+    background: #fff;
     border: 1px solid #ccc;
 }
 .swiper-slide img{
@@ -171,7 +178,7 @@ iframe{
     justify-content: space-between;
     gap: 100px;
     padding-top: 25px;
-    overflow: hidden;
+    margin-bottom: 100px;
 }
 .header-p{
     font-size: 28px;
@@ -190,14 +197,14 @@ iframe{
 .header-p-alt{
     font-size: 18px;
     margin-bottom: 10px;
-    color: #373737;
+    color: #3f3f3f;
 }
-.header-p-alt i{
-    font-size: 22px;
+.header-p-alt span{
+    border-bottom: 2px solid #168a04;
 }
 .pagination{
     position: relative;
-    top: 40px;
+    top: 60px;
 }
 
 .header{
@@ -254,13 +261,21 @@ iframe{
 }
 
 .contact-container{
-    height: 700px;
-    background: #ccc;
+
+    height: auto;
+    margin-bottom: 50px;
+    background: linear-gradient(to top, #000,#454545);
+}
+.mySwiper2{
+    max-width: 600px;
 }
 
-
-
-
+.mySwiper2 .swiper-slide{
+    width: 100%;
+    height: 100%;
+    background: #00000000;
+    border: 0;
+}
 .footer-distributed {
     background: #364050;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -409,27 +424,4 @@ font-family: 'Poppins', sans-serif;
 .m-a{
     margin: auto;
     max-width: 1200px;
-}
-
-/* If you don't want the footer to be responsive, remove these media queries */
-
-@media (max-width: 1200px) {
-
-    .footer-distributed {
-        font-family: 'Poppins', sans-serif;
-    }
-
-    .footer-distributed .footer-left,
-    .footer-distributed .footer-center,
-    .footer-distributed .footer-right {
-        display: block;
-        width: 100%;
-        margin-bottom: 40px;
-        text-align: left;
-    }
-
-    .footer-distributed .footer-center i {
-        margin-left: 0;
-    }
-
 }
