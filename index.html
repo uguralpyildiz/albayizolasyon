@@ -181,9 +181,10 @@
             effect:"cube",
             autoplay:true,          
             autoplay: {
-                delay: 1300,
+                delay: 2000,
             },
             loop:true,
+            speed: 1500,
             grabCursor:true,
             pagination: {
                 el: ".swiper-pagination",
@@ -194,11 +195,8 @@
 <script>
     var swiper = new Swiper(".mySwiper2", {
         effect: "coverflow",
-        autoplay: true,
-        autoplay: {
-            delay: 1300,
-        },
-        loop: true,
+        autoplay: false,
+        loop: false,
         grabCursor: true,
         navigation: {
             nextEl: ".swiper-button-next",
