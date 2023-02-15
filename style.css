@@ -24,6 +24,10 @@ body{
     margin: auto;
 }
 
+.logo-i{
+    width: 200px;
+}
+
 .head-navbar{
     background: #2b3441;
     padding: 10px;
@@ -96,7 +100,7 @@ body{
 }
 .navbar-m{
     position: sticky;
-    top: 0;
+    top: -3px;
     z-index: 88;
     display: none;
     align-items: center;
@@ -119,7 +123,7 @@ body{
 }
 .navbar{
     position: sticky;
-    top: -4px;
+    top: -3px;
     background: #364050;
     z-index: 1000;
     transition: .3s ease-in-out;
@@ -128,7 +132,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 25px 0;
+    padding: 15px 0;
     color: #fff;
 }
 .logo{
@@ -136,6 +140,13 @@ body{
 }
 .logos {
     font-size: 18px;
+}
+.logo{
+    position: relative;
+    top: 4px;
+}
+.logo a{
+    padding: 0 !important;
 }
 .navbar-co a{
     position: relative;
@@ -355,6 +366,7 @@ font-family: 'Poppins', sans-serif;
     font-size: 17px;
     line-height: 38px;
 }
+
 
 .footer-distributed .footer-center p {
     display: inline-block;
