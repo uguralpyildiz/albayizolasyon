@@ -230,7 +230,10 @@ iframe{
     margin-left:20px;
 }
 .product-content{
-    width: 350px; 
+    width: 100%; 
+}
+.product-flex{
+    display: flex;
 }
 
 .box{
@@ -241,7 +244,7 @@ iframe{
     border-radius: 10px;
     overflow: hidden;
 }
-.swiper-slide:hover .show{
+.box:hover .show{
     opacity: 1;
 }
 .show{
@@ -420,19 +423,32 @@ font-family: 'Poppins', sans-serif;
 
 .footer-distributed .footer-icons a {
     display: inline-block;
-    width: 35px;
-    height: 35px;
+    width: 65px;
+    height: 65px;
     cursor: pointer;
     background-color: #272f3a;
     border-radius: 2px;
 
-    font-size: 20px;
+    font-size: 36px;
     color: #ffffff;
     text-align: center;
-    line-height: 35px;
+    line-height: 65px;
 
     margin-right: 3px;
     margin-bottom: 5px;
+}
+.footer-distributed .footer-icons a:nth-child(1) {
+    background: #4267B2;
+}
+.footer-distributed .footer-icons a:nth-child(2) {
+    background: #f09433;
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+.footer-distributed .footer-icons a:nth-child(3) {
+    background: red;
 }
 .m-a{
     margin: auto;

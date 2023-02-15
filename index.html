@@ -36,10 +36,10 @@
             <a href="index.html"><img class="logo-i" src="logo.png" alt="logo"></a>
                 </div>
                 <div class="links">
-                    <a href="#baslangic">Başlangıç</a>
+                    <a href="#baslangic">Anasayfa</a>
                     <a href="#urunler">Ürünlerimiz</a>
                     <a href="#galeri">Galeri</a>
-                    <a href="#iletisim">İletişim</a>
+                    <a href="hakkimizda.html">Hakkımızda</a>
                 </div>
             </div>
         </div>
@@ -59,51 +59,30 @@
         <div class="product-container">
             <div class="container">
                 <div class="section-nav">
-                <div class="about-p">
-                    <div class="header-p">
-                        Hakkımızda
-                    </div>
-                    <div class="p">
-                        AL-BAY Yapı LTD ŞTİ 2010 Yılında İzmit'te kurulmuştur. Enjekte sistemi ile rutubet yalıtımı uygulamasını alman
-                        Hydro Chemie firmasının bayiliğini alarak Türkiye'de ilk defa hayata geçiren AL-BAY Yapı bu sistemin sektöre
-                        kazınılmasını sağlamıştır. 2021 Yılında rutubet ve su yalıtım alanında başlattığı Ar-Ge çalışmalarını 2023'te bitiren
-                        AL-BAY Yapı Lotus Shield adı altında piyasaya sürdüğü ürünleri parakende olarak müşterilerin hizmetine sunmuştur.
-                        Türkiye genelinde yaptığı sayısız garantili rutubet ve su yalıtım uygulamaları ile müşteri memnuniyetini ilk planda tutan
-                        çözüm odaklı iş anlayışını kendisine ilke edinen AL-BAY Yapı profesyonel ekip ve son sistem makinalarla sektörün öncü firmalarından
-                        olmaya devam etmektedir.
-                    </div>
-                </div>
+
                 <div id="urunler" class="product-content">
                         <div class="header-p">
                             Ürünlerimiz
                         </div>
-                        <div class="header-p-alt">
-                            <i class="fa-solid fa-circle-info"></i> Diğer ürüne geçmek için <span>kaydırın.</span><br>
-                            <i class="fa-solid fa-circle-info"></i> Ürünü incelemek için <span>resme tıklayın.</span>
-                        </div>
                     <div class="product-flex">
-                        <div class="swiper mySwiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide p1"><a href="urunler/b40.html"><img src="img/product/b40.png" alt="b40">
-                                        <div class="show">
-                                            <div class="btn">Ürünü İncele</div>
-                                        </div>
-                                    </a></div>
-                                <div class="swiper-slide p1"><a href="urunler/b80.html"><img src="img/product/b80.png" alt="b80">
-                                        <div class="show">
-                                            <div class="btn">Ürünü İncele</div>
-                                        </div>
-                                    </a></div>
-                                <div class="swiper-slide p1"><a href="urunler/b90.html"><img src="img/product/b90.png" alt="b90">
-                                        <div class="show">
-                                            <div class="btn">Ürünü İncele</div>
-                                        </div>
-                                    </a></div>
+                        <div class="box"><a href="urunler/b40.html"><img src="img/product/b40.png" alt="b40">
+                            <div class="show">
+                                <div class="btn">Ürünü İncele</div>
                             </div>
-                            <div class="pagination">
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </div>
+                        </a></div>
+
+                        <div class="box"><a href="urunler/b80.html"><img src="img/product/b80.png" alt="b40">
+                                <div class="show">
+                                    <div class="btn">Ürünü İncele</div>
+                                </div>
+                            </a></div>
+
+
+                        <div class="box"><a href="urunler/b90.html"><img src="img/product/b90.png" alt="b40">
+                                <div class="show">
+                                    <div class="btn">Ürünü İncele</div>
+                                </div>
+                            </a></div>
                     </div>
                 </div>
                 </div>
@@ -120,6 +99,12 @@
                             <div class="swiper-slide"><img src="img/gallery/b.jpg" alt="1"></div>
                             <div class="swiper-slide"><img src="img/gallery/c.jpg" alt="1"></div>
                             <div class="swiper-slide"><img src="img/gallery/d.jpg" alt="1"></div>
+                            <div class="swiper-slide"><img src="img/gallery/e.jpg" alt="1"></div>
+                            <div class="swiper-slide"><img src="img/gallery/a.jpg" alt="1"></div>
+                            <div class="swiper-slide"><img src="img/gallery/1.jpg" alt="1"></div>
+                            <div class="swiper-slide"><img src="img/gallery/2.jpg" alt="1"></div>
+                            <div class="swiper-slide"><img src="img/gallery/3.jpg" alt="1"></div>
+                            <div class="swiper-slide"><img src="img/gallery/4.jpg" alt="1"></div>
                         </div>
                         <div class="swiper-button-next"><i class="fa-solid fa-arrow-right"></i></div>
                         <div class="swiper-button-prev"><i class="fa-solid fa-arrow-left"></i></div>
@@ -166,6 +151,7 @@
         
                 <a target="_blank" href="https://www.facebook.com/albayyapiltdsti"><i class="fa fa-facebook"></i></a>
                 <a target="_blank" href="https://www.instagram.com/albayyapi_rutubetekesincozum/"><i class="fa fa-instagram"></i></a>
+                <a target="_blank" href="https://www.youtube.com/@rutubeteson"><i class="fa fa-youtube"></i></a>
         
             </div>
         
@@ -195,7 +181,7 @@
     var swiper = new Swiper(".mySwiper2", {
         effect: "coverflow",
         autoplay: false,
-        loop: false,
+        loop: true,
         grabCursor: true,
         navigation: {
             nextEl: ".swiper-button-next",
