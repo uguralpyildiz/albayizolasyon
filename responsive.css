@@ -108,6 +108,15 @@
 }
 
 @media only screen and (max-width: 568px) {
+      p {
+            font-size: 13px;
+        }
+               .footer-company-about .p{
+                font-size: 14px;
+               }
+    .footer-distributed {
+            padding: 25px 10px;
+        }
     .product-content {
         margin: auto;
         flex-direction: column;
