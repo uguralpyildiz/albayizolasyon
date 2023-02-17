@@ -171,6 +171,8 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-weight: 600;
+    color: #04448c;
     padding: 0px;
     height: 350px;
 }
