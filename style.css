@@ -171,11 +171,11 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 20px;
-    height: 550px;
+    padding: 0px;
+    height: 350px;
 }
 .header-text{
-    font-size: 32px;
+    font-size: 26px;
     text-align: center;
 }
 
