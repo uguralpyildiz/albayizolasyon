@@ -166,8 +166,18 @@ body{
     transition: .5s cubic-bezier(0.19, 1, 0.22, 1);
     
 }
-
-
+.header-anim{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    height: 550px;
+}
+.header-text{
+    font-size: 32px;
+    text-align: center;
+}
 
 .navbar-co a:hover::before{
     width: 100%;
